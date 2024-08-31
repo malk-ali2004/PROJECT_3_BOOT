@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:rgb(255, 255, 255);  
+}
+body {  
+    background-color: ECDFCC;
+    font-family: "Grey Qo", cursive;
+    font-style: italic;
+    overflow-x: hidden !important;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #b9b9b9;
+    text-shadow: 0 0 10px rgb(151, 144, 148);
+}
+/*ICONS*/
+.aside-icon {
+    width: 50px;
+    height: 70px;
+}
+.aside-icon a i {
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    color:#988d77
+}
+.aside-icon:hover {
+    text-shadow: 0 0 10px 677D6A;
+}
+.fixed-image1 {
+    background-image: url(../img/image11.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.card-my1 {
+    border-radius: 15px !important;
+}
+.card-my2 {
+    height: 400px;
+    background-size: cover;
+    object-fit: cover;
+}
+.fixed-img {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgba(224, 198, 214, 0.256);
+    transition: 0.5s;
+  }
+  .card-my1:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .card-my1::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(224, 198, 214, 0.256);
+    transition: 0.5s;
+  }
+  .card-my1:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .fixed-image2 {
+    background-image: url(../img/image12.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.thanks {
+    margin-top: 30px;
+}
+.thankcard {
+    border: none;
+    transition: all 150ms;
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(195, 159, 192, 0.233);
+}
+.card.card-bg {
+    transition: all 150ms;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card.card-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+}
+.card.card-bg:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+    transition: all 150ms;
+}
+.card.card-bg:hover .card-img-overlay {
+    background: linear-gradient(0deg, rgba(12, 10, 14, 0.685) 0%, #010b138c 100%);
+}
+.card .card-footer {
+    background: none;
+    border-top: none;
+}
+.card .card-footer .media img {
+    border: solid 3px rgba(255, 255, 255, 0.3);
+}
+.card .card-body {
+    transition: all 150ms;
+}
+.card-hover:hover {
+    cursor: pointer;
+    transition: all 150ms;
+}
+.card-hover:hover .card-body {
+    margin-top: 30px;
+    transition: all 150ms;
+}
+.card-hover .card-img-overlay {
+    transition: all 800ms;
+    background: linear-gradient(0deg, rgba(5, 12, 15, 0.379) 0%, #31233a 100%);
+}
+.card-custom {
+    border-radius: 30px !important;
+}
+.card-img-custom {
+    background-image: url(../img/image15.jpeg);
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    clip-path: polygon(38% 0, 100% 0%, 100% 100%, 60% 100%);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.card-custom:hover .card-img-custom {
+    background-position: center;
+}
+.card-body-custom {
+    flex: 1;
+}
+.card-title::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background-color: ECDFCC;
+    transition: 2s;
+}
+.card-custom:hover .card-title::after {
+    width: 90%;
+    height: 5px;
+}
+.btns{
+    margin-left: 40px;
+}
+.Media {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 10px 5px;
+}
+.Media-title {
+    text-transform: uppercase;
+}
+.Media i {
+    color: ECDFCC;
+    font-size: 70px;
+    display: block;   
+   margin:20px auto;   
+}
+.Media a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+

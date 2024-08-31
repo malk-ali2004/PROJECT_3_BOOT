@@ -1,0 +1,709 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.css">
+<title>ZAD CARS</title>
+
+</head>
+<body >
+
+
+ 
+         
+
+    <header>
+      <nav class="navbar navbar-dark bg-dark" style="height: 60px;">
+       
+      
+      
+      <nav  class="navbar navbar-expand-lg bg-body-tertiary bg-dark border py-3 fixed-top ">
+          <div class="container-fluid">
+            <img src="img/logofinal.jpeg" class="rounded-circle" width="120px" height="70px">
+             
+              
+               <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button> 
+              
+              
+              <!-- /////// -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a style=" font-size: 15px; font-weight: 800;" class="nav-link active text-light px-3 " aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a style=" font-size: 15px; font-weight: 800;"  class="nav-link text-light  px-3" href="#">Car offers</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a style=" font-size: 15px; font-weight: 800;"  class="nav-link dropdown-toggle text-light  px-3" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              kinds
+                          </a>
+                          <ul class="dropdown-menu bg-dark">
+                              <li><a class="dropdown-item text-light " href="#">Mercedes</a></li>
+                              <li><a class="dropdown-item text-light" href="#">BMW</a></li>
+                              <li>
+                                  <hr class="dropdown-divider text-light">
+                              </li>
+                              <li><a class="dropdown-item text-light" href="#">Skoda</a></li>
+                              <li><a class="dropdown-item text-light" href="#">Hyundai</a></li>
+                              <li><a class="dropdown-item text-light" href="#">MJ</a></li>
+                              <li><a class="dropdown-item text-light" href="#">Toyota</a></li>
+                              <li><a class="dropdown-item text-light" href="#">More..</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a style=" font-size: 15px;font-weight: 800;"  class="nav-link  px-3 text-light" aria-disabled="true">Colors</a>
+                      </li>
+  
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-secondary mx-2 bg-dark text-light" type="submit">Search</button>
+                      <button type="button" class="btn btn-dark mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                        LogIn
+                    </button>
+                    </form>
+  
+              </div>
+          </div>
+      </nav>
+    </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade  " data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">LogIn</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                      <form>
+                          <div class="m-3 ">
+                              <label class="form-label ">Email address</label>
+                              <input type="email" class="form-control text-dark border-3 border-dark rounded-2"
+                                  aria-describedby="emailHelp">
+                              <p class="form-text text-secondary">Enter Your E-mail.</p>
+                          </div>
+                          <div class="m-3">
+                              <label class="form-label ">Password</label>
+                              <input type="password" class="form-control text-dark border-3 border-dark rounded-2">
+                              <p class="form-text text-secondary">Enter Your Password.</p>
+                            </div>
+                          <div class="m-3 form-check">
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input bg-dark border-light " type="checkbox" role="switch " checked>
+                                  <label class="form-check-label " for="flexSwitchCheckChecked">Remmember me</label>
+                              </div>
+                          </div> <!-- /form check -->
+  
+                      </form>
+                  </div >
+                  <div class="modal-footer d-flex  justify-content-between bg-dark">
+                      <button type="submit" class="btn btn-light text-dark">Login</button>
+                      <button type="button" class="btn btn-light text-dark" data-bs-dismiss="modal">Close</button>
+                  </div> <!-- /model-footer -->
+              </div>
+          </div>
+      </div>
+      <!-- icons     -->
+      <aside>
+        <div class="container-fluid p-0 " style="position: relative;">
+
+            <div class="d-flex flex-column justify-content-between ms-auto"
+                style="position: fixed;z-index: 900;top: 200px;right:30px;">
+                <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-linkedin  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square  "></i></a></div>
+            </div>
+            </div>
+    </aside>
+   
+      <main>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner " >
+          <div class="carousel-item active "  >
+            <img  src="img/image18.jpeg" class="d-block w-100" height="600px" width="40px" >
+            <div class="carousel-caption d-none d-md-block bg-secondary text-light" >
+              <h5>Sport Car</h5>
+              <p>Maisto 2020 Chevrolet Corvette Stingray Coupe (High Wing).</p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="img/image11.jpeg" class="d-block w-100" height="600px" >
+            <div class="carousel-caption d-none d-md-block bg-secondary">
+              <h5>Open cars</h5>
+              <p>roadster (also spider, spyder) is an open two-seat car with emphasis on sporting appearance or character.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/image4.jpeg" class="d-block w-100" height="600px" >
+            <div class="carousel-caption d-none d-md-block bg-secondary">
+              <h5>Jeep </h5>
+              <p>It is an American brand founded in 1948.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <section>
+      <div class="mt-4 p-5 bg-dark text-light border rounded mx-0">
+          <h2 class="h1">Automotive history</h2>
+          <p>The first modern car was invented by Karl Benz in Germany,It was powered by an Auto gasoline engine
+.....        </p>
+          <button type="button" class="btn btn-outline-light py-2 px-5">More</button>
+      </div>
+      <div class="mt-4 p-5 bg-dark text-light border rounded mx-0">
+          <h2 style="text-align: center; font-style: italic;" class="h1">The best types of cars in 2024</h2>
+      </div>
+  </section>
+  <br>
+  <section>
+      <div id="accordion">
+
+          <div class="card bg-dark text-light">
+              <div class="card-header">
+                  <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseOne">
+                    Toyota Corolla
+                  </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    It is one of the best-selling cars in the world, with a strong reputation for reliability and fuel economy. The Corolla is expected to see continued updates in 2024, including improvements in technology and performance
+                  </div>
+              </div>
+          </div>
+
+          <div class="card bg-dark text-light">
+              <div class="card-header">
+                  <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseTwo">
+                    Ford Mustang
+                  </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    
+It represents a symbol of strength and performance in the world of sports cars, and Ford may provide continuous updates to the Mustang to maintain its position as one of the best sports cars in the world in 2024.
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-dark text-light">
+            <div class="card-header">
+                <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseThree">
+                    Porsche Taycan
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  It is a luxury electric car that combines sporty performance and advanced technology.
+                     One of Porsche’s most important goals in developing the Taycan is to meet consumers’ aspirations for high-performance electric cars.
+                      Since the world is developing every day and the needs of car pioneers are becoming more and more diverse, car companies must keep pace and move at the same pace of world development. 
+                      In conclusion, the differing opinions of car enthusiasts and the increase in
+                     the pace of development of car companies increased the movement of the global car market.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section>
+    <hr>
+    <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+        <h1>Reserve your car for the North Coast  branch</h1>
+    </div>
+    <!-- card1 -->
+    <div class="card p-3  text-white shadow-lg bg-dark">
+        <div class="card-body">
+            <h4 class="card-title ">Send Your Data </h4>
+            
+<button type="button" class="btn btn-dark border border-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-size: 18px; ">
+    Send
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Book Your Car</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Are you sure about your reservation for this car?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark border border-2">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+            <br>
+            <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write Your Data:" style="background-color: ECDFCC;"
+                name="text"></textarea>
+        </div>
+    </div>
+    <!-- /card1 -->
+   
+     <hr>
+     <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+        <h1>Reserve your car for the North Coast  branch</h1>
+    </div>
+    <!-- card2 -->
+    <div class="card p-3  text-white shadow-lg bg-dark">
+        <div class="card-body">
+            <h4 class="card-title ">Send Your Data </h4>
+           
+<button type="button" class="btn btn-dark border border-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-size: 18px; ">
+    Send
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Book Your Car</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Are you sure about your reservation for this car?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark border border-2">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+            <br>
+            <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write Yoyr Data:" style="background-color: ECDFCC;"
+                name="text"></textarea>
+        </div>
+    </div>
+
+    <!-- /card2 -->
+    <hr>
+    <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+        <h1>Reserve your car for the North Coast  branch</h1>
+    </div>
+    <!-- card3 -->
+    <div class="card p-3  text-white shadow-lg bg-dark">
+        <div class="card-body">
+            <h4 class="card-title ">Send Your Data </h4>
+           
+<button type="button" class="btn btn-dark border border-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-size: 18px; ">
+    Send
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Book Your Car</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Are you sure about your reservation for this car?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark border border-2">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+            <br>
+            <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write Your Data:" style="background-color: ECDFCC;"
+                name="text"></textarea>
+        </div>
+    </div>
+    <!-- /card3 -->
+    <section>
+      <div class="fixed-img fixed-image1"></div><hr class="my-4">
+      <div class="tran mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+          <h1 class="title" style="font-size: 45px;">Cars Available</h1>
+      </div>
+  </section>
+
+  <section>
+    <div class="row justify-content-around pb-5 ">
+        <div class="eff-1 card-my1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img  class="card-my2 card-img-top" src="img/image1.jpeg" alt="Card image">
+            <div style="text-align: center;" class="card-body">
+                <h4 class="card-title">Volvo Bentley</h4>
+                <p style="font-size: 17px;" class="card-text mt-3">Engineering precision, the strongest and highest performance, only you find here.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a> 
+            </div>
+        </div>
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image2.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Puma Maserati</h4>
+                <p style="font-size: 17px;" class="card-text">With us, you will own a car worthy of your special trip.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image3.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Cadillac Studebaker</h4>
+                <p style="font-size: 17px;" class="card-text">A car built for safe driving and durability.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image5.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Land Rover Ferrari</h4>
+                <p style="font-size: 17px;" class="card-text">Juvenile cars, have powerful performance, without any noise.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image6.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Rolls Royce MG</h4>
+                <p style="font-size: 17px;" class="card-text">Cars designed for your own style, the title of excellence.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image7.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Oldsmobile Jaguar</h4>
+                <p style="font-size: 17px;" class="card-text">We offer you the luxury and elegance that suits you.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image9.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Dodge Triumph</h4>
+                <p style="font-size: 17px;" class="card-text">We offer cars with all specifications and all details.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+        <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img class="card-my2 card-img-top" src="img/image10.jpeg" alt="Card image">
+            <div style="text-align: center;"  class="card-body">
+                <h4 class="card-title">Citroen Chevrolet</h4>
+                <p style="font-size: 17px;" class="card-text">Craftsmanship and quality we offer to you.</p>
+                <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+            </div>
+        </div>
+
+        </div>
+
+</section>
+<section>
+  <div class="fixed-img fixed-image2"></div><hr class="my-4">
+  <div class="card p-3  text-white shadow-lg bg-dark">
+      <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Thanks For</h2>
+  </div>
+</section>
+<section class="thanks">
+  <div class="container" style="width: 100%; min-height: 500px;">
+
+      <div class="row">
+          <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+              <div class="card card-hover text-white card-bg click-col thankcard"
+                  style="background-image:url('img/ROBERT.jpeg'); border-radius: 17px !important;">
+                  <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+
+                          <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                          </h4>
+                          <small><i class="far fa-clock"></i> September 24,2024</small>
+                      </div>
+                      <div class="card-footer">
+                          <div class="media">
+                              <img class="mr-3 rounded-circle" src="img/ROBERT.jpeg"
+                                  alt="Generic placeholder image" style="width:100px">
+                              <div class="media-body">
+                                  <h6 class="my-0 text-white d-block">Robert Anderson</h6>
+                                  <small>Inventor of the first electric car</small>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+              <div class=" card card-hover text-white card-bg click-col thankcard"
+                  style="background-image:url('img/FLAFEO.jfif'); border-radius: 17px !important;">
+                  <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+
+                          <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                          </h4>
+                          <small><i class="far fa-clock"></i>September 24,2024</small>
+                      </div>
+                      <div class="card-footer">
+                          <div class="media">
+                              <img class="mr-3 rounded-circle" src="img/FLAFEO.jfif" alt="Generic placeholder image"
+                                  style="width:100px">
+                              <div class="media-body">Flavio Manzoni</h6>
+                                  <small>Ferrari car designer</small>
+                              </div>
+                          </div>
+                      </div> <!-- card-footer -->
+                  </div> <!-- /card-img-overlay -->
+              </div> <!-- /card -->
+          </div> <!-- /card3 -->
+          <div class="thankcard-parent col-12 col-lg-6 col-xl-4 col-md-12 col-sm-12 mb-4 card3">
+              <div class="card card-hover text-white card-bg click-col thankcard"
+                  style="background-image:url('img/BOUL.jfif'); border-radius: 17px !important;">
+                  <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+
+                          <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                          </h4>
+                          <small><i class="far fa-clock"></i>September 24,2024</small>
+                      </div>
+                      <div class="card-footer">
+                          <div class="media">
+                              <img class="mr-3 rounded-circle" src="img/BOUL.jfif" alt="Generic placeholder image"
+                                  style="width:100px">
+                              <div class="media-body">
+                                  <h6 class="my-0 text-white d-block">Paul Brack</h6>
+                                  <small>BMW car designer</small>
+                              </div>
+                          </div>
+                      </div> <!-- card-footer -->
+                  </div> <!-- /card-img-overlay -->
+              </div> <!-- /card -->
+          </div> <!-- /card3 -->
+
+      </div> <!-- /row -->
+
+  </div>
+</section>
+<section>
+    <div class="h1 text-center bg-dark py-4 text-light" id="pageHeaderTitle" style="font-size: 30px;">Latest News</div>
+</section>
+<section class="section-art container light">
+    <div class="paren-art d-flex flex-column container py-2">
+        <div  class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card card-custom w-100 bg-dark text-light d-flex flex-row-reverse my-5">
+            <div class="card-img-custom" >
+            </div>
+            <div class="card-body card-body-custom">
+                <h4  style="font-size: 40px;width: 40%;margin: 20px;position: relative;"  class="card-title py-2">Electric Car</h4>
+                <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Electric car designs rely on an electric motor, an electrical control system, and a powerful battery that can be recharged while keeping its weight down and making its price affordable for the buyer. The electric car is considered more suitable than internal combustion engine cars in terms of preserving the environment,
+                   as it does not produce harmful waste to the environment.</p>
+                   
+                  <div class="btns">
+                    <button type="button" class="btn btn-outline-light"> <i class="fas fa-podcast"></i> Podcast</button>
+                    <button type="button" class="btn btn-outline-light"> <i class="far fa-clock"></i> 15 mins</button>
+                    <button type="button" class="btn btn-outline-light"> <i class="fas fa-play"></i> Play Episode</button>
+                </div>
+            </div>
+        </div>
+
+        <div  class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card card-custom w-100 bg-dark text-light flex-row">
+            <div style="clip-path: polygon(0 0, 60% 0, 88% 100%, 0 100%); width: 30%; " class="card-img-custom">
+            </div>
+            <div class="card-body card-body-custom">
+                <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative;" class="card-title py-2">BMW Car</h4>
+                <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">The BMW Group's clear goal is to become climate neutral in accordance with the Science Based Emissions Targeting Initiative and achieve net zero SBTi targets. In order to ensure this, the company has set specific
+                   targets and milestones for the year 2030.</p>
+                   
+                    <div class="btns">
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-podcast"></i> Podcast</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="far fa-clock"></i> 33 mins</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-play"></i> Play Esipode</button>
+                    </div>
+            </div>
+        </div>
+        <div  class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card card-custom w-100 bg-dark text-light d-flex flex-row-reverse my-5">
+            <div class="card-img-custom">
+            </div>
+            <div class="card-body card-body-custom">
+                <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative;" class="card-title py-2">Mercedes Car</h4>
+                <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Mercedes cars are distinguished by their elegant and attractive design, and exude sophistication and luxury in every detail. Featuring elegant German style and excellence in craftsmanship, it turns heads wherever it appears. Whether it is luxury sedans like the S-Class or E-Class, SUVs like the GLE Class, or even sports cars like the AMG GT, 
+                  Mercedes offers various designs to suit different tastes..</p>
+                   
+                    <div class="btns">
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-podcast"></i> Podcast</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="far fa-clock"></i> 40 mins</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+            </div>
+        </div>
+        <div  class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card card-custom w-100 bg-dark text-light flex-row">
+            <div style="clip-path: polygon(0 0, 60% 0, 88% 100%, 0 100%); width: 30%; " class="card-img-custom">
+            </div>
+            <div class="card-body card-body-custom">
+                <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative;" class="card-title py-2">Toyota Car</h4>
+                <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">While Toyota is known for its innovation, it relies on its brand reputation for reliability and build quality, making it particularly popular with drivers who demand more from their cars and expect 
+                  them to handle tougher, more demanding terrain..</p>
+                  
+                    <div class="btns">
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-podcast"></i> Podcast</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="far fa-clock"></i> 58 mins</button>
+                        <button type="button" class="btn btn-outline-light"> <i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="mb-5">
+    <div style="margin: auto;" class="container d-flex row justify-content-around">
+    <h2 class="Media-title h1 text-center py-5 text-dark">JOIN US</h2>
+    <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+        <h3 class="text-center text-light title py-2">Subscribe Now</h3>
+        <i class="fab fa-twitter-square"></i>
+        <a class="text-light">Go To Link</a>
+    </div>
+    <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+        <h3 class="text-center text-light title py-2">Follow </h3>
+        <i class="fab fa-whatsapp-square"></i>
+        <a class="text-light">Go To Link</a>
+    </div>
+    <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+        <h3 class="text-center text-light title py-2">Like the Page</h3>
+        <i class="fab fa-linkedin"></i>
+        <a class="text-light">Go To Link</a>
+    </div>
+    <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+        <h3 class="text-center text-light title py-2">Watch Vedios</h3>
+        <i class="fab fa-instagram-square"></i>
+        <a class="text-light">Go To Link</a>
+    </div>
+    </div>
+</section>
+
+<!-- footer -->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5 " >
+
+    <footer class="text-white text-center text-lg-start bg-dark " style="width:100%">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">ZAD</h5>
+  
+          <p>
+            Only with us will you get unparalleled vehicle performance and precision engineering.
+          </p>
+  
+          <p>
+            We offer you the best and most optimal choice in a car that combines the precision of technological details, high quality, and luxurious appearance.
+          </p>
+  
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-secondary btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-secondary btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-secondary btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-secondary btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search CAR</h5>
+  
+          <div class="form-outline form-white mb-4 ">
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+  
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">ZAD3218@Gmail.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 ">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+          <table class="table text-center text-white bg-secondary">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">ZAD.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+</section>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
